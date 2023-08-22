@@ -9,28 +9,13 @@ from tkinter import messagebox
 import psutil
 
 
-#print(f"Total RAM: {psutil.virtual_memory().total / 1024 / 1024 / 1024:.2f} GB")
+#Total RAM: {psutil.virtual_memory().total / 1024 / 1024 / 1024:.2f} GB
 
 # traverse the info
 
 my_system = platform.uname()
 
-'''
-print(f"Number of physical cores: {psutil.cpu_count(logical=False)}")
-#Number of logical cores
-print(f"Number of logical cores: {psutil.cpu_count(logical=True)}")
-#Current frequency
-print(f"Current CPU frequency: {psutil.cpu_freq().current}")
-#Min frequency
-print(f"Min CPU frequency: {psutil.cpu_freq().min}")
-#Max frequency
-print(f"Max CPU frequency: {psutil.cpu_freq().max}")
-print(f"System: {my_system.system}")
-print(f"Node Name: {my_system.node}")
-print(f"Release: {my_system.release}")
-print(f"Version: {my_system.version}")
-print(f"Machine: {my_system.machine}")
-print(f"Processor: {my_system.processor}")'''
+
 x = ttkbootstrap.Window(themename='darkly')
 x.title('customers')
 x.geometry('1000x500')
